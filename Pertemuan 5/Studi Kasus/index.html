@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <style>
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f4f6;
+    font-family: Arial, sans-serif;
+    }
+    .card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 300px;
+    }
+    input {
+    padding: 8px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    }
+    button {
+    padding: 8px 12px;
+    margin-top: 10px;
+    border: none;
+    background: green;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    button:hover {
+    background: darkgreen;
+    }
+    </style>
+</head>
+<body>
+    <div class="card">
+    <h2>Weather Dashboard</h2>
+    <p>Masukkan nama kota untuk melihat cuaca</p>
+    <input type="text" id="cityInput" placeholder="Contoh: Samarinda">
+    <br>
+    <button onclick="cekCuaca()">Tampilkan Cuaca</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
