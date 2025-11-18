@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Perhitungan Gaji Berdasarkan Golongan</title>
+</head>
+<body>
+    <h1>Perhitungan Gaji Berdasarkan Golongan</h1>
+    <form method="post" action="gaji2_proses.php">
+        <table>
+            <tr>
+                <td>Pilih Golongan Karyawan</td>
+                <td>:</td>
+                <td>
+                    <select name="golongan" required>
+                        <option value="">-- Pilih --</option>
+                        <option value="A">Golongan A</option>
+                        <option value="B">Golongan B</option>
+                        <option value="C">Golongan C</option>
+                        <option value="D">Golongan D</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Masukkan Jumlah Jam Kerja</td>
+                <td>:</td>
+                <td><input type="text" name="jam_kerja" required></td>
+            </tr>
+            <tr>
+                <td colspan="3"><input type="submit" value="Hitung Gaji"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
